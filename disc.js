@@ -71,8 +71,8 @@ function discReset() {
   disc.noFill();
   disc.fill(255);
   disc.ellipse(width/2, height/2, width - 2*m, height - 2*m);
-  disc.line(0, height/2, width, height/2);
-  disc.line(width/2, 0, width/2, height);
+  disc.line(m, height/2, width-m, height/2);
+  disc.line(width/2, m, width/2, height-m);
   pop();
 }
 
