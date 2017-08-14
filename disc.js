@@ -61,6 +61,7 @@ function touchMoved(){
 }
 
 function discReset() {
+  var m = 10;
   background(0);
   disc.clear();
   push();
@@ -69,7 +70,7 @@ function discReset() {
   disc.strokeWeight(1);
   disc.noFill();
   disc.fill(255);
-  disc.ellipse(width/2, height/2, disc.width, disc.height);
+  disc.ellipse(width/2, height/2, width - 2*m, height - 2*m);
   disc.line(0, height/2, width, height/2);
   disc.line(width/2, 0, width/2, height);
   pop();
