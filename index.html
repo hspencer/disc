@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="disc.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style. 
+       You might only need one of these values set. -->
+       <title>disc</title>
+  <link rel="stylesheet" href="disc.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1>disc</h1>
+    <div id="disc"></div>
+    <div class="controls">
+      <div class="range">
+        <label for="inc">speed</label>
+        <input type="range" id='inc' value='0.012' min='0' max='.2' step='0.001'>
+      </div>
+      <div class="range">
+        <label for="weight">stroke</label>
+        <input type="range" id='weight' value='1' min='1' max='10' step='1'>
+      </div>
+      <br>
+      <button onclick="clearDisc()">clear</button>
+      <button onclick="saveDisc()">save</button>
+    </div>
+  </div>
+</body>
+</html>
