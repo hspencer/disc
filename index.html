@@ -1,26 +1,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>disc</title>
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <script language="javascript" type="text/javascript" src="disc.js"></script>
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
-
-  <!-- This line removes any default padding and style. 
-       You might only need one of these values set. -->
-       <title>disc</title>
   <link rel="stylesheet" href="disc.css">
 </head>
 
 <body>
   <div class="container">
   <h1>disc</h1>
-    <div id="disc"></div>
+    <div id="disc" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false"></div>
     <div class="controls">
       <div class="range">
         <label for="inc">speed</label>
-        <input type="range" id='inc' value='0.012' min='0' max='.2' step='0.001'>
+        <input type="range" id='inc' value='0.01' min='-0.2' max='0.2' step='0.01'>
       </div>
       <div class="range">
         <label for="weight">stroke</label>
