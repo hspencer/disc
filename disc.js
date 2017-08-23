@@ -21,7 +21,7 @@ function setup() {
 
 
 function draw() {
-  
+  background(0);
   inc = parseFloat(document.getElementById("inc").value);
   t += inc;
   t % TWO_PI;
